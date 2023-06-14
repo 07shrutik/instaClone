@@ -1,0 +1,52 @@
+body {
+    font-family: 'Billabong', sans-serif;
+  }
+  img{
+    margin-top: 20px;
+  }
+  h3{
+    padding: 5px;
+    text-align: center;
+    color: rgb(168, 167, 167);
+  }
+.signupContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupMain{
+  display: flex;
+  border: .5px solid #8e8e8e;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.signupMain form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signupMain p{
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+    color: grey;
+}
+.signupBox span a{
+    color: rgb(0, 115, 255);
+    font-weight: 600;
+}
+.signupBox{
+    border:.5px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin-top: 9px;
+}

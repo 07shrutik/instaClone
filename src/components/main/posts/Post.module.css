@@ -1,0 +1,123 @@
+.postContainer {
+    background-color: #ffffff;
+    /* padding: 8px; */
+
+    width: 450px;
+    margin: 0;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+  }
+  
+  .postTopContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+ 
+  .postProfileImg {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    /* justify-content: center; */
+    /* margin-bottom: 10px; */
+  }
+  
+  .images img {
+    margin-right: 12px;
+    border-radius: 50%;
+    margin-top: 5px;
+    object-fit: cover;
+
+    /* margin-bottom: 10px; */
+  }
+  .imageLike{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 75px;
+  /* color: #dbdbdb; */
+  animation: heartFadeOut 1s ease;
+  }
+  .postUserDetail {
+    display: flex;
+    flex-direction: column;
+  }
+  .images img{
+    height: 40px;
+    width: 40px;
+  }
+  
+  .postUserDetail p:last-child {
+    font-weight: 100;
+    margin-bottom: 2px;
+  }
+  .postUserDetail p {
+    margin: 0;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .topBtn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .topBtn button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .topBtn button:focus {
+    outline: none;
+  }
+  
+  .topBtn button:hover {
+    transform: scale(1.2);
+  }
+  
+  .postImage img{
+    height: 600px;
+    width: 450px;
+    cursor: pointer;
+    object-fit: cover;
+    margin: 0;
+  }
+  .iconBtn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .iconBtn li{
+    list-style: none;
+    cursor: pointer;
+}
+.iconBtnLeft{
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.bottomSec {
+    font-size: 15px;
+    color: #262626;
+}
+.bottomSec p {
+        cursor: pointer;
+        margin:5px;
+    }
+
+.bottomSec p:nth-last-child(2),
+.bottomSec p:last-child {
+    color: #8e8e8e;
+  }
+  .bottomSec span{
+    color: #474545;
+    padding-left: 10px;
+  }

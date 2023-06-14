@@ -1,0 +1,99 @@
+.leftBar{
+    /* display: flex; */
+    margin-top: 60px;
+    width: 300px;
+    /* justify-content: sp; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.leftTopmost{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+}
+.leftTop{
+    display: flex;
+}
+.leftTopImg{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+.leftTopUser p:last-child{
+    cursor: pointer;
+    margin-top: 10px;
+    color: #8e8e8e;
+
+}
+.leftTopUser p{
+    margin: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.leftTopUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leftTopImg img{
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid blueviolet;
+}
+.leftTopBtn li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color:  #3498db;
+}
+.leftSuggest{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #8e8e8e;
+    cursor: pointer;
+
+    font-weight: 600;
+}
+.accountList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 20px;
+}
+.account img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-size: 12px;
+}
+.accountdetail p{
+    display: flex;
+    cursor: pointer;
+    margin: 8px;
+    /* height: 10px; */
+}
+.accountdetail p:last-child{
+    color: #8e8e8e;
+    font-weight: 500;
+}
