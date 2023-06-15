@@ -173,7 +173,9 @@ const Sidebar = () => {
       console.log(getimg);
     }
   });
-
+  const loggeduser = useSelector((state) => {
+    return state.loggedUser;
+  });
   function handleIconClick(id) {
     let res = sideIcons.map((item, index) => {
       if (index === id) {
@@ -357,7 +359,7 @@ const Sidebar = () => {
                   </div>
                   <div className={styles.accountdetail}>
                     <p>
-                      <strong>UserName</strong>
+                      <strong>{loggeduser.username}</strong>
                     </p>
                   </div>
                 </div>

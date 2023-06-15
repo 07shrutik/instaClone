@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./Post.module.css";
 import SendIcon from "@mui/icons-material/Send";
 // import pic1 from "../../../assets/pic1.jpg";
-import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
+// import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
@@ -98,7 +98,7 @@ const Post = (props) => {
         </p>
         {props.post.caption && (
           <>
-            <strong>User Name</strong>
+            <strong>{props.post.username}</strong>
             <span>{props.post.caption}</span>
           </>
         )}

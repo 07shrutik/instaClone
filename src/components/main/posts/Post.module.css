@@ -106,17 +106,25 @@
 }
 .bottomSec {
     font-size: 15px;
+    padding-left: 7px;
     color: #262626;
+}
+.bottomSec >strong{
+  padding-left: 5px;
 }
 .bottomSec p {
         cursor: pointer;
         margin:5px;
-    }
+      }
+      
+      .bottomSec p:nth-last-child(2),
+      .bottomSec p:last-child {
+        color: #8e8e8e;
+      }
+      /* .bottomSec p strong:nth-last-child(3) {
+    padding-left: 10px;
 
-.bottomSec p:nth-last-child(2),
-.bottomSec p:last-child {
-    color: #8e8e8e;
-  }
+  } */
   .bottomSec span{
     color: #474545;
     padding-left: 10px;

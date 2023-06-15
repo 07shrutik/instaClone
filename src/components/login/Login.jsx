@@ -58,7 +58,7 @@ const Login = () => {
         setsuccess(true);
         setTimeout(() => {
           navigate("/userpage");
-        }, 2000);
+        }, 1500);
       } else {
         alert("Password mismatch");
       }

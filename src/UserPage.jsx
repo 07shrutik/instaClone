@@ -21,7 +21,7 @@ const UserPage = () => {
     }
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1500);
   }, [dispatch, navigate]);
 
   return (
