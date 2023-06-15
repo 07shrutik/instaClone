@@ -14,6 +14,21 @@
     border: 1px solid #dbdbdb;
     border-radius: 10px;
 }
+.storyContent {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height: 100vh;
+    /* flex: 1 1 1; */
+    position: fixed;
+  top: 0;
+  /* margin: auto; */
+  left: 0;
+  /* object-position: center; */
+  object-fit: cover;
+  z-index: 9999;
+  }
 .story button{
     border: none;
     background: none;
@@ -44,3 +59,21 @@
 .stories span{
     font-size: 13px;
 }
+    /* .storyContent img{
+        height: 100vh;
+        width: 100vw;
+    } */
+    .storyContent img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* padding-left:150px; */
+        height: 1000px;
+        width: 1000px;
+        right: 0;
+        object-fit: contain;
+        border: none;
+        border-radius: 0;
+      }
+      

@@ -12,10 +12,18 @@ import st7 from "../../../assets/st7.jpg";
 import st8 from "../../../assets/st8.jpg";
 import st9 from "../../../assets/st9.jpg";
 import st10 from "../../../assets/st10.jpg";
+import story1 from "../../../assets/story1.jpg";
+import story2 from "../../../assets/story2.jpg";
+import story3 from "../../../assets/story3.jpg";
+import story4 from "../../../assets/story4.jpg";
+import story5 from "../../../assets/story5.jpg";
+import ReactInstaStories from "react-insta-stories";
 const StorySec = () => {
   const [arr, setArr] = useState([]);
-  // const [isShow, setIsShow] = useState(true);
+  const [openStory, setopenStory] = useState(false);
+  const [story, setstory] = useState(null);
 
+  const stories = [story1, story2, story3, story4, story5];
   let profileImg = [
     { name: "You", image: st1 },
     { name: "Emma", image: st2 },
@@ -32,17 +40,22 @@ const StorySec = () => {
   useEffect(() => {
     const initialProfiles = profileImg.slice(0, 5);
     setArr(initialProfiles);
-    // setIsShow(profileImg.length > 5);
   }, []);
 
   function handleNext() {
     const remainingProfiles = profileImg.slice(arr.length);
     const nextProfiles = remainingProfiles.slice(0, 5);
     setArr([...nextProfiles]);
-    // setIsShow(true);
-    // setIsShow(arr.length + nextProfiles.length < profileImg.length);
   }
-
+  let newstory = [];
+  function handleStoryopen(id) {
+    newstory.push(stories[id]);
+    setstory(newstory);
+    setopenStory(true);
+  }
+  function handleStoryClose() {
+    setopenStory(false);
+  }
   function handlePrevious() {
     const prevProfiles = profileImg.slice(arr.length - 5, arr.length);
     const remainingProfiles = arr.slice(0, arr.length - 5);
@@ -56,10 +69,27 @@ const StorySec = () => {
         <button onClick={handlePrevious}>
           <ChevronLeftIcon />
         </button>
-
+        {openStory && (
+          <div className={styles.storyContent}>
+            <ReactInstaStories
+              stories={story}
+              defaultInterval={4000}
+              width="100vw"
+              height="100vh"
+              // styles={storyContent}
+              onAllStoriesEnd={handleStoryClose}
+              // onNext={handlenext}
+              // currentStory={currentStory}
+            />
+          </div>
+        )}
         {arr.map((item, index) => (
           <div className={styles.stories} key={index}>
-            <img src={item.image} alt="profile image" />
+            <img
+              src={item.image}
+              alt="profile image"
+              onClick={() => handleStoryopen(index)}
+            />
             <span>{item.name}</span>
           </div>
         ))}
