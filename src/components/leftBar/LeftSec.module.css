@@ -1,15 +1,17 @@
 .leftBar{
     /* display: flex; */
-    margin-top: 60px;
+    margin-top: 30px;
     width: 300px;
     /* justify-content: sp; */
     /* align-items: center; */
     /* justify-content: space-between; */
+    margin-right: 4rem;
+    margin-left: 3rem;
 }
 .leftTopmost{
     display: flex;
     align-items: center;
-    width: 300px;
+    width: 250px;
     justify-content: space-between;
 }
 .leftTop{
@@ -69,7 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 300px;
+    width: 250px;
     margin-top: 20px;
 }
 .account img{

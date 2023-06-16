@@ -1,8 +1,14 @@
 .sidebar {
     position: fixed;
-    width: 215px;
+    width: 250px;
     height: 100vh;
-    border: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+.sidebar1 {
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    border-right: 1px solid #f0f0f0;
 }
 .sidebar img{
     width: 150px;
@@ -13,6 +19,18 @@
     padding-left: 10px;
 }
 .iconList li{
+    padding-left: 20px;
+    width: 180px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin-top: 22px;
+    cursor: pointer;
+    
+}
+.instaName{
     padding-left: 20px;
     width: 180px;
     /* border: 1px solid black; */
