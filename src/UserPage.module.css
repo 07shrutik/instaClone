@@ -5,6 +5,16 @@
   .sidebar {
     flex: 0 0 350px;    
 }
+.sidebar1 {
+    
+    
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #868181;
+  text-align: center;
+  padding: 10px;
+  }
   
   .storySec {
    display: flex;

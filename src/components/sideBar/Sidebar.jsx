@@ -28,7 +28,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import { useNavigate } from "react-router-dom";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
-import { Padding } from '@mui/icons-material';
+
 
 const Sidebar = () => {
   let iconstyle = { width: "40px", height: "40px" };
@@ -155,10 +155,7 @@ const Sidebar = () => {
     setgetcaption("");
     setgetimg("");
   }
-  function handleDiscardClose() {
-    setdiscardopen(false);
-    setOpen(true);
-  }
+ 
   function handlelogoutClose() {
     setlogoutopen(false);
   }
@@ -249,29 +246,29 @@ const Sidebar = () => {
     navigate("/");
   }
   return (
-    <div className={styles.sidebar} style={{width:isViewportBelow700 ? "80px":""}}>
-     
+    <div className={styles.sidebar} style={{ width: isViewportBelow700 ? "80px" : "" }}>
+
       <div className={styles.iconList} >
-      {isViewportBelow700 ? (
-  <>
-    <InstagramIcon className={styles.instaName} sx={iconstyle}/>
-    {icons.map((item, index) => (
-      <li key={index} onClick={() => handleIconClick(index)}>
-        {item.icon}
-      </li>
-    ))}
-  </>
-) : (
-  <>
-   <img className={styles.instaName} src={instaLogin} />
-    {icons.map((item, index) => (
-      <li key={index} onClick={() => handleIconClick(index)}>
-        {item.icon}
-        <span>{item.iconName}</span>
-      </li>
-    ))}
-  </>
-)}
+        {isViewportBelow700 ? (
+          <>
+            <InstagramIcon className={styles.instaName} sx={iconstyle} />
+            {icons.map((item, index) => (
+              <li key={index} onClick={() => handleIconClick(index)}>
+                {item.icon}
+              </li>
+            ))}
+          </>
+        ) : (
+          <>
+            <img className={styles.instaName} src={instaLogin} />
+            {icons.map((item, index) => (
+              <li key={index} onClick={() => handleIconClick(index)}>
+                {item.icon}
+                <span>{item.iconName}</span>
+              </li>
+            ))}
+          </>
+        )}
 
         <Modal
           open={open}
@@ -432,16 +429,16 @@ const Sidebar = () => {
           </Box>
         </Modal>
         {isViewportBelow700 ?
-        <li className={styles.more}>
-          <LogoutOutlinedIcon  onClick={() => setlogoutopen(true)} style={{ width: "40px", height: "40px" }} />
-          
-        </li>
-        :
-        <li className={styles.more}>
-        <LogoutOutlinedIcon style={{ width: "40px", height: "40px" }} />
-        <span onClick={() => setlogoutopen(true)}>Logout</span>
-      </li>
-}
+          <li className={styles.more}>
+            <LogoutOutlinedIcon onClick={() => setlogoutopen(true)} style={{ width: "40px", height: "40px" }} />
+
+          </li>
+          :
+          <li className={styles.more}>
+            <LogoutOutlinedIcon style={{ width: "40px", height: "40px" }} />
+            <span onClick={() => setlogoutopen(true)}>Logout</span>
+          </li>
+        }
       </div>
       <Modal
         open={logoutopen}
